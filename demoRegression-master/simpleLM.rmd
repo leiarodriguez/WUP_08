@@ -44,4 +44,15 @@ summary.lm(AGEmodel)
 
 ## Model ~ LENGTH ~ HEADLEN this is an example 
 
+```{r}
+headlenght <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(headlenght)
+summary.lm(headlenght)
+```
+ 
+ 
+## Model ~ LENGTH ~ HEADWTH this is an example  
+
+
 
