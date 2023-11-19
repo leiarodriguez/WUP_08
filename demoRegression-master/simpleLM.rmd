@@ -54,5 +54,12 @@ summary.lm(headlenght)
  
 ## Model ~ LENGTH ~ HEADWTH this is an example  
 
+```{r}
+headwidth <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(headwidth) 
+summary.lm(headwidth)
+```
 
+## Model LENGTH ~ CHEST this an example 
 
