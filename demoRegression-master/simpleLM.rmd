@@ -33,7 +33,7 @@ summary.lm(simp)
 
 ## make a simple regression model for age 
  
-## Model LENGTH ~ NECK this is an example 
+## Model LENGTH ~ AGE this is an example 
 
 ```{r}
 AGEmodel <- lm(LENGTH~AGE,data=bears)
@@ -63,3 +63,24 @@ summary.lm(headwidth)
 
 ## Model LENGTH ~ CHEST this an example 
 
+```{r}
+chestmodel <- lm(LENGTH~CHEST,data=bears) 
+plot(LENGTH~CHEST,data=bears) 
+abline(chestmodel) 
+summary.lm(chestmodel)
+```
+ 
+ 
+## Model LENGTH ~ WEIGHT this is an example 
+ 
+```{r}
+weightmodel <- lm(LENGTH~WEIGHT,data=bears) 
+plot(LENGTH~WEIGHT,data=bears) 
+abline(weightmodel) 
+summary.lm(weightmodel)
+```
+
+
+## conclusion
+
+amange all the model with the largest rsquare was .8434 and the best one was head length. 
